@@ -2,6 +2,7 @@
 
 PSQL="psql --username=freecodecamp --dbname=worldcup --no-align --tuples-only -c"
 
+pg_dump -cC --inserts -U freecodecamp worldcup > worldcup.sql
 # Do not change code above this line. Use the PSQL variable above to query your database.
 
 echo -e "\nTotal number of goals in all games from winning teams:"

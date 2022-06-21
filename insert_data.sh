@@ -10,6 +10,7 @@ fi
 # Do not change code above this line. Use the PSQL variable above to query your database.
 #!/bin/bash
 # Script to insert data from courses.csv and students.csv into students database
+#thuannv
 echo $($PSQL "truncate games,teams")
 cat games.csv | while  IFS="," read YEAR ROUND WINNER OPPONENT WINNER_GOAL OPPONENT_GOAL
 do 
